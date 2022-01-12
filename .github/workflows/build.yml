@@ -1,4 +1,4 @@
-name: build my app
+name: build my app!
 
 on:
   push:
@@ -16,3 +16,4 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
+  
