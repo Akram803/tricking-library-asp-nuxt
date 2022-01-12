@@ -1,11 +1,18 @@
 name: build my app
 
-on: [push]
+on:
+  push:
+    branches: [ main ]
 
 jobs:
   build:
-  name: build our app
     runs-on: ubuntu-latest
     steps:
-      - name: print current directory
-        run: pwd
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+
